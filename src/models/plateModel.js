@@ -1,10 +1,6 @@
 import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 export const OrderSchema = new Schema({
-  restaurantID: {
-    type: String,
-    required: "ID"
-  },
   restaurantName: {
     type: String,
     required: "Name of restaurant"

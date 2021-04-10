@@ -14,11 +14,13 @@ app.listen(PORT, () =>
 console.log(`Your server is running on port ${PORT}`))
 
 // mongoose connection
+
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/platefinancemongodb', {
+mongoose.connect('mongodb+srv://database_user:DatabaseUser1@cluster0.u80ga.mongodb.net/plate_finance?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
+
 //bodyparser setup
 app.use(express.urlencoded());
 app.use(express.json());
