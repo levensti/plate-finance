@@ -56,5 +56,9 @@ export const InventorySchema = new Schema({
   perishTime: {
     type: Number,
     required: "Perish Time in days"
+  },
+  created_date: {
+    type: Date,
+    default: Date.now
   }
 })
