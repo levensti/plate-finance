@@ -4,9 +4,9 @@ import mongoose from 'mongoose';
 
 const app = express();
 
-const PORT = 4000;
+const PORT = 3000;
 
-// get request: http://localhost:4000/
+// http://localhost:3000/
 app.get('/', (req, res) =>
   res.send(`Node and express server running on port ${PORT}`)
 )
