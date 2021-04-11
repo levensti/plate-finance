@@ -13,6 +13,14 @@ export const OrderSchema = new Schema({
     type: String,
     required: "Menu items separated by comma"
   },
+  serviceDuration: {
+    type: Number,
+    required: "Total service time in hours."
+  },
+  ingredientsList: {
+    type: String,
+    required: "Ingredients and quantity. Format: romaine_lettuce:2,tomato:3"
+  },
   comment: {
     type: String
   },

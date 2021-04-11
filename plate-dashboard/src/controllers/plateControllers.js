@@ -26,7 +26,7 @@ export const addNewInventoryItem = (req,res) => {
 }
 
 export const modifyInventoryItem = (req,res) => {
-  console.log(req.params);
+  console.log(req.body);
   InventoryItem.findOneAndUpdate({restaurantName: req.params.restaurantName, itemName: req.params.itemName}, req.body, { new: true, useFindAndModify: false }, (err, inventoryItem) => {
     if (err) {
       res.send(err)
