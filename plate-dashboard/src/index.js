@@ -1,5 +1,5 @@
 import express from 'express';
-import routes from './src/routes/plateRoutes';
+import routes from './routes/plateRoutes';
 import mongoose from 'mongoose';
 
 const app = express();
